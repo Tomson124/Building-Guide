@@ -1,5 +1,6 @@
 package de.tomson124.buildingguide;
 
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -17,5 +18,9 @@ public class BuildingGuide {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+	}
+
+	public static ResourceLocation location(String id) {
+		return new ResourceLocation(MODID, id);
 	}
 }
